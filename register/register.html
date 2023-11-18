@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="" media="screen" />
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/index/index.html">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#last">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../login/login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-5 mb-5">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-6 border p-3 rounded mx-auto">
+                <h2>Register</h2>
+                <form class="loginForm" action="cadastroAction.php" method="POST">
+                    <div class="mb-3 form-floating">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+                        <label for="email">Email address</label>
+                        <div class="alert alert-warning collapse" role="alert" id="emailError"></div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="password" class="form-control" name="senha"  id="password" placeholder="Password">
+                        <label for="password">Password</label>
+                        <div class="alert alert-warning collapse" role="alert" id="passwordError"></div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="alert alert-warning collapse" role="alert" id="passwordConfirmError"></div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="name" class="form-control" name="nome"  id="name" placeholder="Name">
+                        <label for="name">Complete Name</label>
+                        <div class="alert alert-warning collapse" role="alert" id="nameError"></div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="date" class="form-control" name="datanascimento" id="birthdate">
+                        <label for="birthdate" class="form-label">Date of Birth</label>
+                        <div class="alert alert-warning collapse" role="alert" id="birthdateError"></div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" name="cpf"  id="cpf" placeholder="CPF">
+                        <label for="cpf">CPF</label>
+                        <div class="alert alert-warning collapse" role="alert" id="cpfError"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a href="../login/login.html" class="btn btn-secondary" role="button">Login</a>
+                </form>
+                
+            </div>
+        </div>
+    </main>
+    <footer class="navbar navbar-expand-lg navbar-dark bg-primary fixed-bottom">
+        <div class="container">
+            <span class="navbar-text">
+                Trabalho Final de PPI - Gabriel da Silva Reis, Humberto Machado, Marcos Aquino
+            </span>
+        </div>
+    </footer>
+    <script src="register.js"></script>
+    <script src="confirmPassword.js"></script>
+    
+</body>
+
+</html>
